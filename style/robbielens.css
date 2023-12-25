@@ -1,0 +1,120 @@
+.acceuilIntroduction{
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.acceuilIntroduction h1{
+    margin-bottom: 15px;
+}
+
+.acceuilIntroduction p{
+    margin-bottom: 30px;
+}
+
+.acceuilIntroduction div{
+    padding-right: 80px;
+}
+
+.acceuilPhotos{
+    background-color: white;
+    padding: 80px;
+}
+
+.acceuilPhotos h2{
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.acceuilPhotos div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    color:white;
+}
+
+.formulaire h2{
+    text-align: center;
+    color: #a5b4fc;
+    margin-bottom: 50px;
+}
+
+.formNomEmail{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.formColumn{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    display: flex;
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+@media  screen  and (max-width: 996px) {
+    .acceuilIntroduction{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .acceuilIntroduction div {
+        padding-right: 0;
+        text-align: center;
+        order: 2;
+    }
+
+    .acceuilIntroduction img {
+        order: 1;
+        margin-bottom: 20px;
+        width: 100%;
+    } 
+
+    .acceuilPhotos{
+        padding: 20px;
+    }
+
+    .acceuilPhotos div {
+        flex-direction: column;
+    }
+
+    .formulaire{
+        padding: 50px 20px;
+    }
+
+    .formNomEmail{
+        flex-direction: column;
+        gap: 0;
+    }
+}
